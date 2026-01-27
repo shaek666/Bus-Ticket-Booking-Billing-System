@@ -1,0 +1,14 @@
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.AssemblyInfoInputs.cache
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.AssemblyInfo.cs
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.csproj.CoreCompileInputs.cache
+/home/bubbleping/Practice/BusTicketBookingSystem/bin/Debug/net10.0/BusTicketBookingSystem
+/home/bubbleping/Practice/BusTicketBookingSystem/bin/Debug/net10.0/BusTicketBookingSystem.deps.json
+/home/bubbleping/Practice/BusTicketBookingSystem/bin/Debug/net10.0/BusTicketBookingSystem.runtimeconfig.json
+/home/bubbleping/Practice/BusTicketBookingSystem/bin/Debug/net10.0/BusTicketBookingSystem.dll
+/home/bubbleping/Practice/BusTicketBookingSystem/bin/Debug/net10.0/BusTicketBookingSystem.pdb
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.dll
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/refint/BusTicketBookingSystem.dll
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.pdb
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.genruntimeconfig.cache
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/ref/BusTicketBookingSystem.dll
