@@ -12,3 +12,4 @@
 /home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.pdb
 /home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.genruntimeconfig.cache
 /home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/ref/BusTicketBookingSystem.dll
+/home/bubbleping/Practice/BusTicketBookingSystem/obj/Debug/net10.0/BusTicketBookingSystem.sourcelink.json
