@@ -1,96 +1,57 @@
-**Assignment 1**  
-Total Marks: 50  
----
+# Bus Ticket Booking System
 
-## **Problem Statement**
+Console-based bus ticket booking and billing system implemented with C# and OOP principles. The application manages users, buses, schedules, seat reservations, invoices, and payments in-memory.
 
-Design and implement a **Bus Ticket Booking & Billing System** for a transportation company. The system must allow users to book bus tickets, select seats, receive invoices, and make payments. The project must be implemented using **Object-Oriented Programming (OOP)** principles and must demonstrate proper use of **SOLID**, **KISS**, and **DRY** principles.
+## Features
+- User management with unique mobile number and email validation
+- Bus management with Business and Economy seat layouts
+- Schedule management for routes, departure times, and ticket prices
+- Seat selection with reservation hold and payment confirmation
+- Invoice generation and payment tracking
+- Menu-driven CLI for all operations
 
----
+## Business Rules and Validation
+- Mobile number must be 11 digits starting with `0`. The system stores it with a `+88` prefix.
+- Email must include `@` and `.` and must be unique per user.
+- Departure and arrival cities must differ and contain no digits.
+- Departure date/time must be in the future (`yyyy-MM-dd HH:mm`).
+- Ticket price must be between `0` and `9999.99`.
+- Seat numbering:
+  - Business: rows `1-9`, seats `A-C` (27 total)
+  - Economy: rows `1-9`, seats `A-D` (36 total)
+- Seats are reserved on booking and confirmed on payment.
+- Unpaid reservations expire after 10 minutes.
 
-## **System Requirements**
+## Getting Started
 
-### **1\. User Management**
+### Prerequisites
+- .NET SDK targeting `net10.0`
 
-* The system must allow creation of users.  
-* Each user should have:  
-  * A unique ID  
-  * Name  
-  * Mobile number  
-  * Email address  
-* A user can book multiple tickets.
+### Run
+```bash
+dotnet run --project BusTicketBookingSystem.csproj
+```
 
----
+## Usage
+Follow the on-screen menu to:
+- Create and list users
+- Create and list buses
+- Create and list schedules
+- View schedule details and seat layout
+- Book tickets (creates an invoice)
+- Pay invoices to confirm bookings
+- View a user's invoices and paid tickets
 
-### **2\. Bus Management**
+## Project Structure
+- `Program.cs` - application entry point and menu handling
+- `Services/BookingSystem.cs` - core business operations
+- `Models/` - domain models (User, Bus, Schedule, Ticket, Invoice)
+- `Enums/` - enum definitions for bus type and payment status
+- `Utils/ValidationHelper.cs` - input validation utilities
 
-* The system must support multiple buses.  
-* Each bus must have:  
-  * Unique ID  
-  * Coach number  
-  * Bus type (e.g., Business, Economy)  
-  * Total number of seats based on bus type  
-* The system must track booked and available seats.
+## Notes
+- Data is stored in memory and is cleared when the application exits.
+- The seat layout view marks paid seats as booked.
 
----
-
-### **3\. Schedule Management**
-
-* Each bus can have multiple schedules.  
-* A schedule must include:  
-  * Departure city  
-  * Arrival city  
-  * Departure date and time  
-  * Ticket price  
-* Each schedule must be linked to a bus.
-
----
-
-### **4\. Ticket Booking**
-
-* A user must be able to:  
-  * Select a schedule  
-  * Choose a seat  
-  * Book a ticket  
-* The system must:  
-  * Validate seat numbers based on bus type  
-  * Prevent double booking of seats
-
-* On successful booking (after payment):  
-  * A ticket must be generated  
-  * The seat must be marked as booked
-
----
-
-### **5\. Invoice & Payment**
-
-* Every ticket booking must generate an invoice.  
-* An invoice must include  
-  * Invoice ID  
-  * Ticket ID  
-  * User ID  
-  * Amount  
-  * Invoice date  
-  * Payment status (Paid / Unpaid)
-
-* Users must be able to:  
-  * View their invoices  
-  * Pay unpaid invoices
-
----
-
-### **6\. Viewing Information**
-
-The system must allow:
-
-* Create User  
-* Show Users  
-* Create Bus  
-* Show Buses  
-* Create Schedule  
-* Show Schedules  
-* Show Schedule Details  
-* Book Ticket  
-* Show Invoices of a user  
-* Pay Invoice  
-* Show Tickets of a User
+## License
+See `LICENSE`.

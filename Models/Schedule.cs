@@ -14,8 +14,7 @@ namespace BusTicketBookingSystem.Models
         public decimal TicketPrice { get; set; }
         private Dictionary<string, SeatReservation> ReservedSeats { get; set; }
 
-        public Schedule(int scheduleId, int busId, string departureCity, string arrivalCity, 
-                       DateTime departureDateTime, decimal ticketPrice)
+        public Schedule(int scheduleId, int busId, string departureCity, string arrivalCity, DateTime departureDateTime, decimal ticketPrice)
         {
             ScheduleId = scheduleId;
             BusId = busId;
