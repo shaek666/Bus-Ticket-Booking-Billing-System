@@ -97,7 +97,7 @@ namespace BusTicketBookingSystem
         {
             Console.Write("Enter Name: ");
             string? name = Console.ReadLine();
-            ValidationHelper.ValidateNotEmpty(name, "Name");
+            ValidationHelper.ValidateName(name);
             
             Console.Write("Enter Mobile Number: ");
             string? mobile = Console.ReadLine();

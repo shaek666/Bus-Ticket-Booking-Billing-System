@@ -157,5 +157,19 @@ namespace BusTicketBookingSystem.Utils
             if (string.IsNullOrWhiteSpace(input))
                 throw new Exception($"{fieldName} Cannot Be Empty.");
         }
+
+        /// <summary>
+        /// Validates a person name (non-empty, no digits)
+        /// </summary>
+        /// <param name="name">Name to validate</param>
+        /// <exception cref="Exception">Thrown when name is invalid</exception>
+        public static void ValidateName(string? name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new Exception("Name Cannot Be Empty.");
+
+            if (name.Any(char.IsDigit))
+                throw new Exception("Name Cannot Contain Numbers.");
+        }
     }
 }
