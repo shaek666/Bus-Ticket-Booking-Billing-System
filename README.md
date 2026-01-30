@@ -42,6 +42,9 @@ Follow the on-screen menu to:
 - Pay invoices to confirm bookings
 - View a user's invoices and paid tickets
 
+## Screenshot
+![Console application screenshot](./screenshot.png)
+
 ## Project Structure
 - `Program.cs` - application entry point and menu handling
 - `Services/BookingSystem.cs` - core business operations
